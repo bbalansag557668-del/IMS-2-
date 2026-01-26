@@ -26,5 +26,6 @@ namespace IMS.Infustructure.Data
                 "Initial Catalog=IMSDB;Integrated Security=True; " +
                 "TrustServerCertificate=True");
         }
+        public DbSet<Profile> profiles { get; set; }
     }
 }
