@@ -64,7 +64,7 @@ namespace IMS.Infrastructure.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<Guid>("ProfileId")
+                    b.Property<Guid?>("ProfileId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("SecurityStamp")
@@ -253,9 +253,7 @@ namespace IMS.Infrastructure.Migrations
                 {
                     b.HasOne("IMS.Domain.Models.Profile", "Profile")
                         .WithMany()
-                        .HasForeignKey("ProfileId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ProfileId");
 
                     b.Navigation("Profile");
                 });
