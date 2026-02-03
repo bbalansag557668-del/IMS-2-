@@ -12,8 +12,8 @@ namespace IMS.Domain.Models
         public Guid Id { get; set; }
         [ForeignKey(nameof(CreatedById))]
         [Required]
-        public string CreatedById { get; set; }
-        public virtual AppUser CreatedBy { get; set; }
+        public string ?CreatedById { get; set; }
+        public virtual AppUser ?CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
 
         [ForeignKey(nameof(UpdatedById))]

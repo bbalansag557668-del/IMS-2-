@@ -14,7 +14,7 @@ namespace IMS.Domain.Models
         [Key]
         public Guid Id { get; set; }
         [Required]
-        public string FullName { get; set; }
+        public string ?FullName { get; set; }
         public int Age { get; set; }
         public DateTime Birthday { get; set; }
         public Gender Gender { get; set; }

@@ -7,6 +7,6 @@ namespace IMS.Domain.Models
 {
     public class AppUser : IdentityUser
     {
-        public Profile Profile { get; set; }
+        public Profile ?Profile { get; set; }
     }
 }
