@@ -65,6 +65,7 @@
             textBoxSearch.Name = "textBoxSearch";
             textBoxSearch.Size = new Size(271, 23);
             textBoxSearch.TabIndex = 2;
+            textBoxSearch.TextChanged += textBoxSearch_TextChanged;
             // 
             // textBoxId
             // 
@@ -127,6 +128,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Cyan;
             ClientSize = new Size(800, 450);
             Controls.Add(button1);
             Controls.Add(textBoxDexcription);
